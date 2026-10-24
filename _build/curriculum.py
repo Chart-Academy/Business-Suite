@@ -79,6 +79,7 @@ MODULES = [
                           "DC licenses, permits, and registration steps for this business", "Regulatory considerations",
                           "Ethical guidelines the business will follow", "How the business name will be protected"],
         "outcome": "A legally structured, registration-ready business plan.",
+        "own_words": ['“I chose this business structure because …”', '“The compliance step that will take me the longest is … and my plan is …”'],
         "objectives": [
             "Choose a business structure (sole proprietorship, LLC, or other) that fits the business model and risk.",
             "Produce a complete DC compliance pathway: registration, EIN, Clean Hands, Basic Business License, and permits.",
@@ -105,6 +106,7 @@ MODULES = [
         "project_items": ["Business name and tagline", "Logo (draft)", "Target audience profile from interviews and survey data",
                           "30-day social media content plan", "Capability statement (intro version)", "Elevator pitch (60 seconds)"],
         "outcome": "A customer-validated brand and market fit.",
+        "own_words": ['“The most surprising thing a customer told me was …”', '“My brand is different from others in my market because …”'],
         "objectives": [
             "Build a data-informed target audience profile from 1:1 customer interviews and a survey.",
             "Develop a complete brand kit: name, tagline, logo, and market position.",
@@ -132,6 +134,7 @@ MODULES = [
                           "12-month revenue model in Excel or Google Sheets", "Startup budget", "Monthly operating budget",
                           "Funding plan", "Personal financial goal statement"],
         "outcome": "A financially viable business model.",
+        "own_words": ['“I set my price at … because …”', '“The number in my budget I am least sure about is … and I will check it by …”'],
         "objectives": [
             "Apply cost-based and value-based pricing to set profitable price points.",
             "Build a 12-month revenue model and defensible startup and monthly budgets in a spreadsheet.",
@@ -158,6 +161,7 @@ MODULES = [
         "project_items": ["Business setup plan (Module 1)", "Brand kit (Module 2)", "Financial plan (Module 3)",
                           "Marketing strategy", "90-day launch plan", "Resume", "5-minute pitch with slides"],
         "outcome": "A launch-ready business validated by an external panel of business owners.",
+        "own_words": ['“The problem my business solves is … for …”', '“My next three steps to launch are …”'],
         "objectives": [
             "Combine the business plan, brand, financial model, and marketing strategy into one capstone portfolio.",
             "Write a resume and answer interview questions, including how to talk about time away, with confidence.",

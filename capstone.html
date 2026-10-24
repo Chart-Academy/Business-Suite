@@ -1,63 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Capstone · Business Suite · Chart Academy</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=20261024a">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Capstone · Business Suite Curriculum</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Lexend:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+  <link rel="icon" type="image/png" href="images/chart-icon.png">
+  <link rel="stylesheet" href="css/style.css?v=20261024c">
+  <script>(function(){try{var t=localStorage.getItem("theme");if(t)document.documentElement.setAttribute("data-theme",t);}catch(e){}})();</script>
 </head>
 <body id="top">
-<header class="site-header"><div class="wrap">
-<a class="brand" href="index.html"><img src="images/chart-logo-icon.png" alt="Chart Academy logo"><span class="brand-text">Business Suite<small>Chart Academy · ONSE Pathways</small></span></a>
-<nav aria-label="Main"><input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Show or hide the menu"><label for="nav-toggle" class="nav-btn" aria-hidden="true"><span class="bars"></span>Menu</label>
-<ul class="nav">
-<li><a href="index.html">Home</a></li>
-<li><a href="getting-started.html">Getting Started</a></li>
-<li><a href="modules/build.html">1 · Build</a></li>
-<li><a href="modules/brand.html">2 · Brand</a></li>
-<li><a href="modules/finance.html">3 · Finance</a></li>
-<li><a href="modules/launch.html">4 · Launch</a></li>
-<li><a href="capstone.html" aria-current=page>Capstone</a></li>
-<li><a href="readiness.html">Readiness Review</a></li>
-</ul></nav>
-</div></header>
+  <nav class="site-nav" aria-label="Main">
+    <div class="wrap">
+      <a class="brand-mark" href="index.html"><img src="images/chart-icon.png" alt="" width="40" height="40"><span>Chart Academy</span></a>
+      <ul class="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="getting-started.html">Getting Started</a></li>
+        <li><a href="lessons.html">Lessons</a></li>
+        <li><a href="capstone.html" aria-current="page">Capstone</a></li>
+        <li><a href="grading.html">Grading</a></li>
+        <li><a href="readiness.html">Readiness Review</a></li>
+      </ul>
+      <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode"></button>
+    </div>
+  </nav>
+  <div class="road" aria-hidden="true"></div>
 
-<main>
+  <main class="wrap">
+    <header class="page-head gs-head">
+      <div class="gs-head-text">
+        <p class="eyebrow">Days 19 and 20 · two parts</p>
+        <h1>Capstone Pitch Competition</h1>
+        <p class="lede">Every participant presents their business to a panel of established business owners and professionals. The capstone has two parts: the Business Portfolio (submitted in Canvas by Day 19) and the Pitch (Day 20).</p>
+      </div>
+      <svg class="hire-art" viewBox="0 0 380 240" role="img" aria-label="A business plan and a pitch deck, stamped Ready">
+        <ellipse class="ha-shadow" cx="190" cy="222" rx="160" ry="10"/>
+        <g transform="rotate(-6 120 120)">
+          <rect class="ha-paper" x="52" y="34" width="132" height="176" rx="6"/>
+          <circle class="ha-photo" cx="82" cy="66" r="14"/>
+          <path class="ha-name" d="M104 60h62M104 74h44"/>
+          <path class="ha-line" d="M66 100h104M66 114h92M66 128h104M66 150h80M66 164h100M66 178h70"/>
+          <path class="ha-tick" d="M160 147l6 6 10-12"/>
+        </g>
+        <rect class="ha-post" x="206" y="44" width="124" height="150" rx="6"/>
+        <rect class="ha-post-head" x="206" y="44" width="124" height="30" rx="6"/>
+        <path class="ha-post-text" d="M220 60h70"/>
+        <path class="ha-line" d="M220 92h92M220 106h80M220 120h92M220 134h60"/>
+        <circle class="ha-lens" cx="302" cy="150" r="26"/>
+        <path class="ha-handle" d="M321 169l26 26"/>
+        <g class="ha-stamp">
+          <rect x="116" y="96" width="132" height="46" rx="8"/>
+          <text x="182" y="128" text-anchor="middle">READY</text>
+        </g>
+      </svg>
+    </header>
 
-<div class="hero"><div class="wrap">
-  <p class="eyebrow">Days 19 and 20 · 50 points</p>
-  <h1>Capstone Pitch Competition</h1>
-  <p class="lead">Every participant presents their business to a panel of established business owners and professionals. The capstone has two parts: the Business Portfolio (submitted in Canvas by Day 19) and the Pitch (Day 20).</p>
-</div></div>
+    <section>
+      <h2 class="section-title">Part A: Business Portfolio (due Day 19)</h2>
+      <div class="prose">
+        <p>Your portfolio brings together everything you built in the four modules. It must be consistent: the prices in your financial plan should match your pitch, and your brand should match your marketing.</p>
+        <ol><li>Business setup plan and DC compliance checklist</li><li>Brand kit</li><li>Financial plan: pricing, revenue model, budgets</li><li>Marketing strategy and 30-day content plan</li><li>90-day launch plan</li><li>Resume</li></ol>
+        <p class="submit-canvas"><a class="btn btn-primary" href="https://thechartacademy.instructure.com" target="_blank" rel="noopener">Upload your portfolio in Canvas</a></p>
+      </div>
+    </section>
 
-<section class="alt"><div class="wrap grid g2">
-  <div class="card course"><p class="eyebrow">Part 1 · due Day 19</p><h3>Business Portfolio</h3>
-    <ul><li>Business setup plan and DC compliance checklist</li><li>Brand kit</li><li>Financial plan: pricing, revenue model, budgets</li><li>Marketing strategy and 30-day content plan</li><li>90-day launch plan</li><li>Resume</li></ul><a class="btn" href="https://thechartacademy.instructure.com" target="_blank" rel="noopener">Upload in Canvas ↗</a></div>
-  <div class="card course c2"><p class="eyebrow">Part 2 · Day 20</p><h3>The Pitch</h3>
-    <ul><li>5 minutes, with up to 8 slides</li><li>The problem and your customer</li><li>Your business and why you</li><li>Evidence from interviews and the survey</li><li>Price, revenue, and what it costs to start</li><li>Your ask: what you need next</li><li>3 to 5 minutes of panel questions</li></ul></div>
-</div></section>
+    <section class="capstone">
+      <p class="eyebrow">Capstone</p>
+      <h2 class="section-title">Part B: The Pitch (Day 20)</h2>
+      <div class="prose">
+        <p>You present your business to a panel of established business owners and professionals, with ONSE staff, partners, and guests in the room.</p>
+        <ol><li>5 minutes, with up to 8 slides</li><li>The problem and your customer</li><li>Your business and why you</li><li>Evidence from interviews and the survey</li><li>Price, revenue, and what it costs to start</li><li>Your ask: what you need next</li><li>3 to 5 minutes of panel questions</li></ol>
+        <p class="callout">The top three pitches receive a $500 startup package for licensing, incorporation, and launch.</p>
+        <div class="own-words"><p class="label">In your own words · write this part yourself</p><ul><li>“The problem my business solves is … for …”</li><li>“My next three steps to launch are …”</li><li>“I know people will pay because … (what my interviews and survey showed)”</li></ul></div>
+      </div>
+    </section>
 
-<section><div class="wrap">
-  <h2>How the panel scores you</h2>
-  <table class="facts"><tr><th>Viability · 10</th><td>The business solves a real problem for a defined customer, backed by interview and survey evidence.</td></tr><tr><th>Financial readiness · 10</th><td>Prices, revenue model, budgets, and funding plan are complete and realistic.</td></tr><tr><th>Market alignment · 10</th><td>The business fits a real DC market opportunity and has a clear marketing strategy.</td></tr><tr><th>Clarity and delivery · 10</th><td>The pitch is clear, on time, and confident, and the answers to questions are direct.</td></tr><tr><th>Portfolio completeness · 10</th><td>All six portfolio pieces are submitted and consistent with each other.</td></tr></table>
-  <div class="note">The top three pitches receive a $500 startup package for licensing, incorporation, and launch.</div>
-  <div class="own-words"><b>Practice out loud</b><ul>
-    <li>“The problem I solve is … for …”</li>
-    <li>“I know people will pay because … (what my interviews and survey showed).”</li>
-    <li>“It costs … to start, I charge …, and I break even after … sales.”</li>
-    <li>“What I need next is …”</li></ul></div>
-</div></section>
-</main>
+    <section>
+      <h2 class="section-title">How the panel scores you</h2>
+      <div class="table-wrap"><table>
+        <thead><tr><th>Criterion</th><th>What the panel looks for</th><th class="num">Points</th></tr></thead>
+        <tbody><tr><td><strong>Viability</strong></td><td>The business solves a real problem for a defined customer, backed by interview and survey evidence.</td><td class='num'>10</td></tr><tr><td><strong>Financial readiness</strong></td><td>Prices, revenue model, budgets, and funding plan are complete and realistic.</td><td class='num'>10</td></tr><tr><td><strong>Market alignment</strong></td><td>The business fits a real DC market opportunity and has a clear marketing strategy.</td><td class='num'>10</td></tr><tr><td><strong>Clarity and delivery</strong></td><td>The pitch is clear, on time, and confident, and the answers to questions are direct.</td><td class='num'>10</td></tr><tr><td><strong>Portfolio completeness</strong></td><td>All six portfolio pieces are submitted and consistent with each other.</td><td class='num'>10</td></tr></tbody>
+        <tfoot><tr><td>Total</td><td></td><td class="num">50</td></tr></tfoot>
+      </table></div>
+    </section>
 
-<footer class="site-footer"><div class="wrap cols">
-<div><h4>Modules</h4><ul><li><a href="modules/build.html">1 · Build</a></li><li><a href="modules/brand.html">2 · Brand</a></li><li><a href="modules/finance.html">3 · Finance</a></li><li><a href="modules/launch.html">4 · Launch</a></li></ul></div>
-<div><h4>Support</h4><ul><li><a href="getting-started.html">Getting Started</a></li><li><a href="readiness.html">Readiness Review</a></li><li><a href="capstone.html">Capstone</a></li><li><a href="https://thechartacademy.instructure.com" target="_blank" rel="noopener">Canvas</a></li></ul></div>
-<div><p>© 2026 Chart Academy · In partnership with IRSJA<br>Delivered for the DC Office of Neighborhood Safety and Engagement<br><a href="https://www.thechartacademy.com" target="_blank" rel="noopener">thechartacademy.com</a></p><p>Crisis support: call or text <a href="tel:988">988</a> · DC Access Helpline <a href="tel:18887934357">1-888-793-4357</a></p><p><a href="#top">Back to top ↑</a></p></div>
-</div></footer>
-<script>/* open the day a link points to (for example modules/build.html#day-3) */
-function openHash(){var d=location.hash&&document.querySelector(location.hash);if(d&&d.tagName==="DETAILS"){d.open=true;d.scrollIntoView();}}
-addEventListener("hashchange",openHash);openHash();</script>
+    <section>
+      <h2 class="section-title">Also on Day 20</h2>
+      <div class="prose"><ul>
+        <li><strong>Post-assessment:</strong> the same check you took on Day 1, so you can see your growth.</li>
+        <li><strong>Graduation:</strong> certificates, your Greater Washington Black Chamber of Commerce membership, and next steps with your case manager.</li>
+      </ul>
+      <p><a class="btn btn-primary" href="https://thechartacademy.instructure.com" target="_blank" rel="noopener">Take the post-assessment</a></p></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <nav class="footer-map" aria-label="Site map">
+        <div>
+          <p class="footer-head">Course</p>
+          <ul><li><a href="index.html">Home</a></li><li><a href="getting-started.html">Getting Started</a></li><li><a href="grading.html">Grading</a></li></ul>
+        </div>
+        <div>
+          <p class="footer-head">Learn</p>
+          <ul><li><a href="lessons.html">Lessons</a></li><li><a href="capstone.html">Capstone</a></li><li><a href="readiness.html">Readiness Review</a></li></ul>
+        </div>
+        <div>
+          <p class="footer-head">Support</p>
+          <ul><li><a href="https://thechartacademy.instructure.com" target="_blank" rel="noopener">Canvas</a></li><li><a href="tel:988">988 Crisis Line</a></li><li><a href="tel:18887934357">DC Access Helpline</a></li></ul>
+        </div>
+      </nav>
+      <a class="to-top" href="#top">Back to top <span aria-hidden="true">↑</span></a>
+      <div class="footer-meta">
+        <p>© 2026 Chart Academy · Curriculum by IRSJA</p>
+        <p>Business Suite Curriculum · Delivered for the DC Office of Neighborhood Safety and Engagement · <a href="https://www.thechartacademy.com">thechartacademy.com</a></p>
+      </div>
+    </div>
+  </footer>
+  <script src="js/theme.js"></script>
+  <script>/* open the lesson a link points to, for example lessons.html#day-3 */
+  function openHash(){var d=location.hash&&document.querySelector(location.hash);if(d&&d.tagName==="DETAILS"){d.open=true;d.scrollIntoView();}}
+  addEventListener("hashchange",openHash);openHash();</script>
 </body>
 </html>

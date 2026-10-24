@@ -1,73 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Getting Started · Business Suite · Chart Academy</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=20261024a">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Getting Started · Business Suite Curriculum</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Lexend:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+  <link rel="icon" type="image/png" href="images/chart-icon.png">
+  <link rel="stylesheet" href="css/style.css?v=20261024c">
+  <script>(function(){try{var t=localStorage.getItem("theme");if(t)document.documentElement.setAttribute("data-theme",t);}catch(e){}})();</script>
 </head>
 <body id="top">
-<header class="site-header"><div class="wrap">
-<a class="brand" href="index.html"><img src="images/chart-logo-icon.png" alt="Chart Academy logo"><span class="brand-text">Business Suite<small>Chart Academy · ONSE Pathways</small></span></a>
-<nav aria-label="Main"><input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Show or hide the menu"><label for="nav-toggle" class="nav-btn" aria-hidden="true"><span class="bars"></span>Menu</label>
-<ul class="nav">
-<li><a href="index.html">Home</a></li>
-<li><a href="getting-started.html" aria-current=page>Getting Started</a></li>
-<li><a href="modules/build.html">1 · Build</a></li>
-<li><a href="modules/brand.html">2 · Brand</a></li>
-<li><a href="modules/finance.html">3 · Finance</a></li>
-<li><a href="modules/launch.html">4 · Launch</a></li>
-<li><a href="capstone.html">Capstone</a></li>
-<li><a href="readiness.html">Readiness Review</a></li>
-</ul></nav>
-</div></header>
+  <nav class="site-nav" aria-label="Main">
+    <div class="wrap">
+      <a class="brand-mark" href="index.html"><img src="images/chart-icon.png" alt="" width="40" height="40"><span>Chart Academy</span></a>
+      <ul class="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="getting-started.html" aria-current="page">Getting Started</a></li>
+        <li><a href="lessons.html">Lessons</a></li>
+        <li><a href="capstone.html">Capstone</a></li>
+        <li><a href="grading.html">Grading</a></li>
+        <li><a href="readiness.html">Readiness Review</a></li>
+      </ul>
+      <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode"></button>
+    </div>
+  </nav>
+  <div class="road" aria-hidden="true"></div>
 
-<main>
+  <main class="wrap">
+    <header class="page-head gs-head">
+      <div class="gs-head-text">
+        <p class="eyebrow">Day 1 · Orientation</p>
+        <h1>Getting Started</h1>
+        <p class="lede">On the first day, we set up your accounts together, go over how the class works, and you take a short pre-assessment. Bring your phone and a photo ID if you have one. Laptops are provided.</p>
+      </div>
+      <svg class="walk-art" viewBox="0 0 360 220" role="img" aria-label="Students walking into Chart Academy">
+        <rect class="wa-ground" x="0" y="196" width="360" height="24" rx="4"/>
+        <path class="wa-path" d="M0 204h236"/>
+        <rect class="wa-wall" x="196" y="78" width="150" height="118" rx="4"/>
+        <path class="wa-roof" d="M186 82l85-46 85 46z"/>
+        <path class="wa-pole" d="M271 36V8"/>
+        <path class="wa-flag" d="M272 9h22l-6 7 6 7h-22z"/>
+        <rect class="wa-sign" x="210" y="84" width="122" height="20" rx="4"/>
+        <text class="wa-sign-text" x="271" y="98.5" text-anchor="middle">Chart Academy</text>
+        <rect class="wa-win" x="212" y="110" width="28" height="20" rx="3"/>
+        <rect class="wa-win" x="302" y="110" width="28" height="20" rx="3"/>
+        <rect class="wa-win" x="212" y="140" width="28" height="24" rx="3"/>
+        <rect class="wa-win" x="302" y="140" width="28" height="24" rx="3"/>
+        <rect class="wa-door" x="252" y="134" width="38" height="62" rx="3"/>
+        <circle class="wa-knob" cx="282" cy="168" r="2.5"/>
+        <g class="walker w1"><g class="bob"><rect class="wa-pack" x="-14" y="-40" width="8" height="18" rx="3"/><rect class="wa-body b1" x="-8" y="-44" width="16" height="28" rx="7"/><circle class="wa-head" cx="0" cy="-52" r="8"/><path class="wa-legs" d="M-4 -16v14M4 -16v14"/></g></g>
+        <g class="walker w2"><g class="bob"><rect class="wa-pack" x="-14" y="-38" width="8" height="16" rx="3"/><rect class="wa-body b2" x="-8" y="-42" width="16" height="26" rx="7"/><circle class="wa-head" cx="0" cy="-50" r="7.5"/><path class="wa-legs" d="M-4 -16v14M4 -16v14"/></g></g>
+        <g class="walker w3"><g class="bob"><rect class="wa-pack" x="-14" y="-41" width="8" height="18" rx="3"/><rect class="wa-body b3" x="-8" y="-45" width="16" height="29" rx="7"/><circle class="wa-head" cx="0" cy="-53" r="8"/><path class="wa-legs" d="M-4 -16v14M4 -16v14"/></g></g>
+      </svg>
+    </header>
 
-<div class="hero"><div class="wrap">
-  <p class="eyebrow">Day 1</p>
-  <h1>Getting Started</h1>
-  <p class="lead">Everything you need for your first day, and who to ask when something gets in the way.</p>
-</div></div>
+    <section class="readiness-box" id="pre-assessment">
+      <div class="readiness-text">
+        <p class="eyebrow">Pre-assessment · about 25 minutes</p>
+        <h2>Day One Pre-Assessment</h2>
+        <p>A short check of what you already know about starting and running a business. It shows where you're starting, so the course can help you grow from there. It isn't graded, and it's fine not to know the answers yet. You take the same check on Day 20 to see how far you've come.</p>
+        <ol class="readiness-steps">
+          <li>Log in to Canvas with the account your instructor sets up with you.</li>
+          <li>Answer on your own. It measures you, not a search engine or an AI tool.</li>
+          <li>Click <strong>Submit</strong> at the end.</li>
+        </ol>
+        <p><a class="btn btn-primary" href="https://thechartacademy.instructure.com" target="_blank" rel="noopener">Start the pre-assessment</a></p>
+      </div>
+    </section>
 
-<section class="alt"><div class="wrap grid g2">
-  <div><h2>Bring on Day 1</h2><ul><li>A government photo ID (or a plan with your case manager to get one)</li><li>Your phone, charged, with a working number</li><li>An email address you can log in to (we will help you make one)</li><li>Your supervision check-in schedule, if you have one, so we can plan around it</li><li>One or two business ideas, even rough ones</li></ul>
-  <p class="small">Missing something? Come anyway. Your case manager will help you sort it out.</p></div>
-  <div><h2>Your accounts</h2>
-  <div class="card"><h3>Canvas</h3><p>Where you find materials, take the daily exit ticket (that is how attendance is counted), and submit your projects. You keep access after you graduate.</p><a class="btn" href="https://thechartacademy.instructure.com" target="_blank" rel="noopener">Open Canvas ↗</a></div>
-  <div class="card" style="margin-top:14px"><h3>Pre-assessment</h3><p>A short check of what you already know, on Day 1. It is not graded. You take the same one on Day 20 to see how much you grew.</p><a class="btn" href="https://thechartacademy.instructure.com" target="_blank" rel="noopener">Take it in Canvas ↗</a></div>
-  </div>
-</div></section>
+    <section>
+      <h2 class="section-title">Set up your accounts</h2>
+      <ul class="gs-cards four"><li class="gs-card"><svg class="gs-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><h3>A professional email</h3><p>One you're comfortable giving to customers and lenders. If yours is a nickname, we will help you make one with your name.</p></li><li class="gs-card"><svg class="gs-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v14H4z"/><path d="M4 9h16M9 9v10"/></svg><h3>Canvas</h3><p>Where you find materials, answer the daily exit ticket (that is how attendance is counted), and submit your projects. You keep access after you graduate.</p></li><li class="gs-card"><svg class="gs-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 18l4-12h8l4 12z"/><path d="M8 6l8 12M16 6L8 18"/></svg><h3>A Google account</h3><p>Google Drive keeps your business plan, survey, and spreadsheets in one place. Google Forms runs your market research survey.</p></li><li class="gs-card"><svg class="gs-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg><h3>Your phone</h3><p>Charged, with a working number. You'll use it for customer interviews, banking apps, and your business social media.</p></li></ul>
+      <p class="callout">Missing an ID, a phone, or an email? Come anyway. Your case manager will help you sort it out in your <a href="readiness.html">Readiness Review</a> this week.</p>
+    </section>
 
-<section><div class="wrap">
-  <h2>Group agreements</h2>
-  <table class="facts"><tr><th>Respect</th><td>One voice at a time. Disagree with ideas, not people.</td></tr><tr><th>Your story, your terms</th><td>You never have to share anything about your past.</td></tr><tr><th>Confidential</th><td>What people share in this room stays in this room.</td></tr><tr><th>Attendance</th><td>Two missed days in a row and your case manager will reach out to help, not to judge.</td></tr><tr><th>Phones</th><td>Phones are tools here. Use them for class work, silence them otherwise.</td></tr></table>
-</div></section>
+    <section>
+      <h2 class="section-title">How each class works</h2>
+      <p class="lede section-lede">Every class is 3 hours and follows the same rhythm: <strong>Learn → Do → Build</strong>. Most days start with a 5-minute Tech Catch-Up on one digital skill.</p>
+      <ol class="gs-cards three gs-flow"><li class="gs-card"><svg class="gs-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h7a3 3 0 0 1 3 3v12a2 2 0 0 0-2-2H4z"/><path d="M20 5h-4a3 3 0 0 0-2 1"/><path d="M20 5v13h-6"/></svg><h3>1. Learn</h3><p>Expert Content from your instructor and your IRSJA guide: Boss Up, Money Moves, or Flipping the Game.</p></li><li class="gs-card"><svg class="gs-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-7 8-7s8 3 8 7"/></svg><h3>2. Do</h3><p>Field Experience in the real market (interviews, surveys, networking) or a Master Class with a guest expert or Truist Bank.</p></li><li class="gs-card"><svg class="gs-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 6l4 4-9 9H5v-4z"/><path d="M12 8l4 4"/></svg><h3>3. Build</h3><p>Add today's piece to your own business portfolio, then answer the exit ticket and click <strong>Submit in Canvas</strong>.</p></li></ol>
+    </section>
 
-<section class="alt"><div class="wrap">
-  <p class="eyebrow">5 minutes a day</p>
-  <h2>Tech Catch-Up</h2>
-  <p>Most days start with one quick digital skill. If you have been away for years, this is where you catch up. If you already know it, you help someone who does not.</p>
-  <ol><li>Logging in to Canvas and email; strong passwords and two-step login</li><li>Saving, finding, and sharing files in Google Drive</li><li>Government websites: making an account safely, reading PDFs, and filling in forms</li><li>Recording notes and voice memos on your phone</li><li>Google Forms for surveys; sharing a link by text</li><li>Canva for logos and flyers</li><li>Business social media accounts and privacy settings</li><li>Banking apps, Zelle and Cash App, and spotting payment scams</li><li>Spreadsheet basics: cells, sums, and formulas</li><li>AI assistants: what they are good at, and what to check yourself</li></ol>
-</div></section>
+    <section class="gs-box">
+      <h2 class="section-title">Your words, your work</h2>
+      <div class="prose">
+        <p>Every module project ends with an <strong>In your own words</strong> section. Your instructor, AI tools, and classmates can help you build your plan, but this part you write yourself. Lenders, partners, and the pitch panel want to know what <em>you</em> understand about your business.</p>
+        <ul><li><em>“I chose this business structure because …”</em></li><li><em>“I set my price at … because …”</em></li></ul>
+        <p>Short and honest beats long and polished.</p>
+      </div>
+    </section>
 
-<section><div class="wrap">
-  <h2>Finishing the program</h2>
-  <div class="note info">To complete the program, attend at least 48 of the 60 hours, submit the three module projects, and pitch on Day 20. The top three pitches win a $500 startup package.</div>
-  <h2>Your team</h2>
-  <table class="facts"><tr><th>Program Director</th><td><strong>Cedric Thompson, M.Ed.</strong><br>Overall program oversight, curriculum alignment, quality assurance, and ONSE relationship.</td></tr><tr><th>Subject Matter Expert, Curriculum Developer</th><td><strong>Dr. Jamila T. Davis (IRSJA)</strong><br>Developer of Boss Up, Money Moves, and Flipping the Game. Ensures curriculum fidelity and oversees implementation.</td></tr><tr><th>Lead Instructor / Facilitator (Key Personnel)</th><td><strong>Wayne Williams, PMP, CSM</strong><br>Primary in-person instruction, facilitation of learning activities, and instructional quality.</td></tr><tr><th>Case Management Associate</th><td><strong>Rasheed Murphy</strong><br>Attendance follow-up, barrier resolution, reentry resource connection, and coaching. Outreach after 2 consecutive absences.</td></tr><tr><th>Guest Subject Matter Experts</th><td><strong>Partner network</strong><br>Master Class speakers: DLCP, SCORE, DC Chamber, GWBCC, Truist Bank, finance professionals, and local business owners.</td></tr></table>
-</div></section>
-</main>
+    <section class="gs-box rules">
+      <h2 class="section-title">Ground rules</h2>
+      <ul class="rule-list"><li><svg class="gs-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.5 2.5L16 9.5"/></svg><span>Respect: one voice at a time. Disagree with ideas, not people.</span></li><li><svg class="gs-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="10" width="14" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg><span>Your story, your terms: you never have to share anything about your past.</span></li><li><svg class="gs-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="10" width="14" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg><span>What people share in this room stays in this room.</span></li><li><svg class="gs-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg><span>Attendance: miss two days in a row and your case manager reaches out to help, not to judge.</span></li><li><svg class="gs-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6"/><path d="M20 20l-4.5-4.5"/></svg><span>Check facts that matter, especially licensing rules and numbers, before you rely on them.</span></li><li><svg class="gs-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 6l4 4-9 9H5v-4z"/></svg><span>Write the “In your own words” part of every project yourself.</span></li></ul>
+    </section>
 
-<footer class="site-footer"><div class="wrap cols">
-<div><h4>Modules</h4><ul><li><a href="modules/build.html">1 · Build</a></li><li><a href="modules/brand.html">2 · Brand</a></li><li><a href="modules/finance.html">3 · Finance</a></li><li><a href="modules/launch.html">4 · Launch</a></li></ul></div>
-<div><h4>Support</h4><ul><li><a href="getting-started.html">Getting Started</a></li><li><a href="readiness.html">Readiness Review</a></li><li><a href="capstone.html">Capstone</a></li><li><a href="https://thechartacademy.instructure.com" target="_blank" rel="noopener">Canvas</a></li></ul></div>
-<div><p>© 2026 Chart Academy · In partnership with IRSJA<br>Delivered for the DC Office of Neighborhood Safety and Engagement<br><a href="https://www.thechartacademy.com" target="_blank" rel="noopener">thechartacademy.com</a></p><p>Crisis support: call or text <a href="tel:988">988</a> · DC Access Helpline <a href="tel:18887934357">1-888-793-4357</a></p><p><a href="#top">Back to top ↑</a></p></div>
-</div></footer>
-<script>/* open the day a link points to (for example modules/build.html#day-3) */
-function openHash(){var d=location.hash&&document.querySelector(location.hash);if(d&&d.tagName==="DETAILS"){d.open=true;d.scrollIntoView();}}
-addEventListener("hashchange",openHash);openHash();</script>
+    <section>
+      <h2 class="section-title">Tech Catch-Up</h2>
+      <p class="lede section-lede">One quick digital skill most days. If you have been away for a while, this is where you catch up. If you already know it, you help someone who doesn't.</p>
+      <div class="prose"><ol><li>Logging in to Canvas and email; strong passwords and two-step login</li><li>Saving, finding, and sharing files in Google Drive</li><li>Government websites: making an account safely, reading PDFs, and filling in forms</li><li>Recording notes and voice memos on your phone</li><li>Google Forms for surveys; sharing a link by text</li><li>Canva for logos and flyers</li><li>Business social media accounts and privacy settings</li><li>Banking apps, Zelle and Cash App, and spotting payment scams</li><li>Spreadsheet basics: cells, sums, and formulas</li><li>AI assistants: what they are good at, and what to check yourself</li></ol></div>
+    </section>
+    <p class="callout">New to business or to computers, or coming back after time away? That's who this course was built for. Ask questions early and often.</p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <nav class="footer-map" aria-label="Site map">
+        <div>
+          <p class="footer-head">Course</p>
+          <ul><li><a href="index.html">Home</a></li><li><a href="getting-started.html">Getting Started</a></li><li><a href="grading.html">Grading</a></li></ul>
+        </div>
+        <div>
+          <p class="footer-head">Learn</p>
+          <ul><li><a href="lessons.html">Lessons</a></li><li><a href="capstone.html">Capstone</a></li><li><a href="readiness.html">Readiness Review</a></li></ul>
+        </div>
+        <div>
+          <p class="footer-head">Support</p>
+          <ul><li><a href="https://thechartacademy.instructure.com" target="_blank" rel="noopener">Canvas</a></li><li><a href="tel:988">988 Crisis Line</a></li><li><a href="tel:18887934357">DC Access Helpline</a></li></ul>
+        </div>
+      </nav>
+      <a class="to-top" href="#top">Back to top <span aria-hidden="true">↑</span></a>
+      <div class="footer-meta">
+        <p>© 2026 Chart Academy · Curriculum by IRSJA</p>
+        <p>Business Suite Curriculum · Delivered for the DC Office of Neighborhood Safety and Engagement · <a href="https://www.thechartacademy.com">thechartacademy.com</a></p>
+      </div>
+    </div>
+  </footer>
+  <script src="js/theme.js"></script>
+  <script>/* open the lesson a link points to, for example lessons.html#day-3 */
+  function openHash(){var d=location.hash&&document.querySelector(location.hash);if(d&&d.tagName==="DETAILS"){d.open=true;d.scrollIntoView();}}
+  addEventListener("hashchange",openHash);openHash();</script>
 </body>
 </html>
