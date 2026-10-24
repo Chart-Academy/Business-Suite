@@ -187,7 +187,7 @@ DAYS = [
         "field": None, "master": None, "truist": None,
         "exit": "Which idea are you most excited about, and what is one support you need this month?",
         "reentry": ("Day one is about safety and belonging. Nobody is asked to share their story. The Case Management Associate "
-                    "meets each participant this week for a short reentry needs check (ID, phone, housing, supervision schedule)."),
+                    "meets each participant this week for a short readiness review (ID, phone, housing, supervision schedule)."),
     },
     {
         "n": 2, "title": "Understanding a Business Plan", "topics": ["FIN", "BRAND"],
@@ -598,7 +598,7 @@ TEACHING = [
 ]
 
 DIVERSE_LEARNERS = [
-    ("Reentry supports", "A short reentry needs check in week 1 (ID, phone, housing, supervision schedule, Clean Hands status), "
+    ("Reentry supports", "A short readiness review in week 1 (ID, phone, housing, supervision schedule, Clean Hands status), "
                          "with the Case Management Associate following up on each barrier."),
     ("Digital catch-up", "A 5-minute Tech Catch-Up opens most days, so participants who have been away build phone, email, "
                          "Canvas, spreadsheet, and AI skills in small steps. Laptops are provided."),

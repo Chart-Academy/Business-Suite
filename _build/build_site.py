@@ -14,7 +14,7 @@ CSS_V = "20261024a"
 
 NAV = [("index.html", "Home"), ("getting-started.html", "Getting Started"), ("modules/build.html", "1 · Build"),
        ("modules/brand.html", "2 · Brand"), ("modules/finance.html", "3 · Finance"), ("modules/launch.html", "4 · Launch"),
-       ("capstone.html", "Capstone"), ("reentry.html", "Reentry Toolkit")]
+       ("capstone.html", "Capstone"), ("readiness.html", "Readiness Review")]
 
 
 def page(path, title, body):
@@ -46,7 +46,7 @@ def page(path, title, body):
 
 <footer class="site-footer"><div class="wrap cols">
 <div><h4>Modules</h4><ul>{"".join(f'<li><a href="{up}modules/{m["key"]}.html">{m["num"]} · {m["name"].title()}</a></li>' for m in C.MODULES)}</ul></div>
-<div><h4>Support</h4><ul><li><a href="{up}getting-started.html">Getting Started</a></li><li><a href="{up}reentry.html">Reentry Toolkit</a></li><li><a href="{up}capstone.html">Capstone</a></li><li><a href="{link("HOME")}" target="_blank" rel="noopener">Canvas</a></li></ul></div>
+<div><h4>Support</h4><ul><li><a href="{up}getting-started.html">Getting Started</a></li><li><a href="{up}readiness.html">Readiness Review</a></li><li><a href="{up}capstone.html">Capstone</a></li><li><a href="{link("HOME")}" target="_blank" rel="noopener">Canvas</a></li></ul></div>
 <div><p>© 2026 Chart Academy · In partnership with IRSJA<br>Delivered for the DC Office of Neighborhood Safety and Engagement<br><a href="https://www.thechartacademy.com" target="_blank" rel="noopener">thechartacademy.com</a></p><p>Crisis support: call or text <a href="tel:988">988</a> · DC Access Helpline <a href="tel:18887934357">1-888-793-4357</a></p><p><a href="#top">Back to top ↑</a></p></div>
 </div></footer>
 <script>/* open the day a link points to (for example modules/build.html#day-3) */
@@ -95,7 +95,7 @@ def index():
   <p><span class="partner">Curriculum by <strong>IRSJA</strong> · Delivered by <strong>Chart Academy</strong></span></p>
   <div class="btns">
     <a class="btn" href="getting-started.html">Start here →</a>
-    <a class="btn ghost" href="reentry.html">Reentry Toolkit</a>
+    <a class="btn ghost" href="readiness.html">Readiness Review</a>
   </div>
   </div>
   <img src="images/chart-logo-full.png" alt="Chart Academy logo">
@@ -124,7 +124,7 @@ def index():
       <ul>{"".join(f"<li>{e(x)}</li>" for x in leave)}</ul></div>
     <div><p class="eyebrow">Reentry support</p><h2>Designed for returning citizens</h2>
       <p>If you have been away for a while, a lot changed: phones, apps, banking, how businesses get customers. This course meets you where you are. Every day starts with a short Tech Catch-Up, a case manager helps with ID, Clean Hands, supervision schedules, and anything else in the way, and nobody has to share their story unless they want to.</p>
-      <a class="btn ghost" href="reentry.html">See the Reentry Toolkit</a></div>
+      <a class="btn ghost" href="readiness.html">See the Readiness Review</a></div>
   </div>
 </div></section>"""
     page("index.html", "Home", body)
@@ -188,7 +188,7 @@ def day_block(day):
         chips.append(f'<span class="chip c-field">Field · {e(day["field"])}</span>')
     agenda = "".join(f'<li><span class="mins">{m} min</span><b>{e(label)}</b> {e(text)}</li>' for m, label, text in day["agenda"])
     topics = ", ".join(C.TOPICS[t] for t in day["topics"])
-    reentry = (f'<div class="note info"><strong>Reentry support.</strong> {e(plain(day["reentry"]))}</div>'
+    reentry = (f'<div class="note info"><strong>Readiness support.</strong> {e(plain(day["reentry"]))}</div>'
                if day.get("reentry") else "")
     exit_ = (f'<div class="download"><div><div class="file">Exit ticket</div><div class="meta">{e(day["exit"])}</div></div>'
              f'{canvas_btn(f"D{day["n"]}", "Answer in Canvas")}</div>' if day.get("exit") else "")
@@ -287,7 +287,7 @@ def reentry():
     body = f"""
 <div class="hero"><div class="wrap">
   <p class="eyebrow">Support for returning citizens</p>
-  <h1>Reentry Toolkit</h1>
+  <h1>Readiness Review</h1>
   <p class="lead">Starting a business after time away means clearing a few extra hurdles: ID, debts to DC, a record, credit, supervision rules, and a world that went digital. None of these has to stop you. Here is where to start, and your case manager will walk each step with you.</p>
 </div></div>
 
@@ -316,7 +316,7 @@ def reentry():
 <section><div class="wrap">
   <div class="note">In crisis or need to talk? Call or text <a href="tel:988">988</a>, or call the DC Access Helpline at <a href="tel:18887934357">1-888-793-4357</a>, any time.</div>
 </div></section>"""
-    page("reentry.html", "Reentry Toolkit", body)
+    page("readiness.html", "Readiness Review", body)
 
 
 def main():

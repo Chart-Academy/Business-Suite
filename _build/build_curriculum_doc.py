@@ -156,7 +156,7 @@ def overview(d):
            "The Chart Academy delivers it through its in-person instructional model, Canvas learning management system, "
            "case management, and District employer and financial partnerships.")
     d.labeled("Who it serves. ", P["population"] + " The curriculum is designed for that reality: a predictable daily "
-              "routine, plain-language materials, a short daily Tech Catch-Up, a reentry needs check in week one, and a "
+              "routine, plain-language materials, a short daily Tech Catch-Up, a readiness review in week one, and a "
               "dedicated Case Management Associate.")
     d.labeled("What participants leave with. ", "A launch-ready business portfolio (business plan and DC compliance pathway, "
               "brand kit, financial plan, marketing strategy, and 90-day launch plan), a resume, IRSJA reference guides to "
@@ -403,7 +403,7 @@ def implementation(d):
         ("5 business days before Day 1", "Confirm Master Class speakers, Truist sessions, SCORE mentors, and the pitch panel; "
                                          "print reference guides and workbooks; prepare laptops.", "Lead Instructor, Operations"),
         ("Day 1", "Orientation, pre-assessment, Canvas setup; pre-assessment summary to ONSE.", "Lead Instructor, Data Analyst"),
-        ("Week 1", "Reentry needs check with every participant.", "Case Management Associate"),
+        ("Week 1", "Readiness review with every participant.", "Case Management Associate"),
         ("Days 1 to 20", "Daily instruction, attendance, and progress reports.", "Lead Instructor, Data Analyst"),
         ("Days 5, 10, 15", "Module projects scored with feedback.", "Lead Instructor"),
         ("Day 20", "Capstone pitch competition, post-assessment, and graduation.", "All staff"),

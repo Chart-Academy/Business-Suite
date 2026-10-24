@@ -3,7 +3,7 @@
 Chart Academy's in-person entrepreneurship program for the DC Office of Neighborhood Safety and Engagement (ONSE)
 Pathways Program, contract CW137729. Curriculum by IRSJA (Boss Up, Money Moves, Flipping the Game).
 60 hours over 20 days in four modules: BUILD, BRAND, FINANCE, LAUNCH, ending in a pitch competition.
-Designed for participants coming home after time away, with a daily Tech Catch-Up and a Reentry Toolkit.
+Designed for participants coming home after time away, with a daily Tech Catch-Up and a Readiness Review.
 
 ## How it's built
 
@@ -21,6 +21,6 @@ Setup once: `python3 -m venv .venv && .venv/bin/pip install python-docx`.
 ## Still to do
 
 - [ ] Create the Business Suite Canvas course and assignments (module projects M1–M3, capstone, pre/post assessment, daily exit tickets), then fill in `canvas_links.py`.
-- [ ] Before each cohort, confirm the agency details and rules flagged CONFIRM in `curriculum.py` and the resource links on the Reentry page.
+- [ ] Before each cohort, confirm the agency details and rules flagged CONFIRM in `curriculum.py` and the resource links on the Readiness Review page.
 - [ ] Participant workbook and project templates (Word).
 - [ ] Pre/post assessment questions (25 items).
