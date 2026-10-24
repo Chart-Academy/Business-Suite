@@ -7,7 +7,7 @@ Items marked CONFIRM are agency details to verify with the agency before each co
 
 PROGRAM = {
     "title": "Business Suite Curriculum",
-    "subtitle": "From Hustle to Business Owner",
+    "subtitle": "Entrepreneurship and Business Ownership Program",
     "contract": "CW137729",
     "solicitation": "Doc814073",
     "agency": "DC Office of Neighborhood Safety and Engagement (ONSE)",
@@ -124,7 +124,7 @@ MODULES = [
     {
         "key": "finance", "num": 3, "name": "FINANCE", "days": (11, 15), "guide": "Money Moves",
         "focus": "Financial planning and profitability",
-        "summary": ("Make the numbers work. Rebuild personal financial footing, then set prices, build a revenue model, "
+        "summary": ("Build a financially viable business. Strengthen personal financial management, then set prices, build a revenue model, "
                     "and create startup and monthly budgets that a finance professional reviews."),
         "skills": "Financial literacy, pricing, revenue modeling, budgeting, banking, and funding",
         "project": "Revenue Model + Startup and Monthly Budget",
@@ -151,7 +151,7 @@ MODULES = [
     {
         "key": "launch", "num": 4, "name": "LAUNCH", "days": (16, 20), "guide": "Flipping the Game",
         "focus": "Execution and presentation",
-        "summary": ("Get ready for the real world. Plan staffing, use AI tools, prepare a resume and interview skills for "
+        "summary": ("Prepare for launch. Plan staffing, use AI tools, prepare a resume and interview skills for "
                     "income while you build, then pitch your business to a panel of business owners."),
         "skills": "Staffing, AI tools, resumes and interviews, stakeholder communication, and pitching",
         "project": "Capstone Business Portfolio + Final Pitch",
@@ -171,7 +171,7 @@ MODULES = [
 DAYS = [
     # ---------------- MODULE 1: BUILD ----------------
     {
-        "n": 1, "title": "Welcome Home to Business", "topics": ["WEALTH", "FIN"],
+        "n": 1, "title": "Orientation and Entrepreneurial Foundations", "topics": ["WEALTH", "FIN"],
         "objectives": ["Complete the pre-assessment and set up Canvas and email.",
                        "Name the business skills you already have from work, family, and the informal economy.",
                        "Write down three business ideas to test this week."],
@@ -179,7 +179,7 @@ DAYS = [
             (20, "Open", "Welcome, introductions, group agreements, and what the next 20 days look like."),
             (30, "Assessment", "Pre-assessment in Canvas (knowledge and confidence). Staff help anyone who needs it."),
             (30, "Tech Catch-Up", "Log in to Canvas and email on the laptop and phone. Reset passwords, turn on two-step login."),
-            (60, "Expert Content", "Flipping the Game: from hustle to business. The skills you already have (sales, negotiation, "
+            (60, "Expert Content", "Flipping the Game: from informal enterprise to formal business. The skills you already have (sales, negotiation, "
                                    "managing money and people) and how they transfer to a legal business."),
             (30, "Build", "Business idea brainstorm: three ideas, who would pay, and why you."),
             (10, "Close", "Exit ticket: the idea you are most excited about, and one support you need this month."),
@@ -249,7 +249,7 @@ DAYS = [
                     "rules and legal-aid contacts before each cohort)."),
     },
     {
-        "n": 5, "title": "Protecting Your Name and Ideas + Technical Assistance Lab", "topics": ["IP", "LIC"],
+        "n": 5, "title": "Intellectual Property and Technical Assistance Lab", "topics": ["IP", "LIC"],
         "objectives": ["Explain trademarks, copyright, and trade names, and search the USPTO database.",
                        "Get one-on-one help from a DC small business technical assistance provider.",
                        "Submit the Module 1 project."],
@@ -269,7 +269,7 @@ DAYS = [
     },
     # ---------------- MODULE 2: BRAND ----------------
     {
-        "n": 6, "title": "Who Is Your Customer? Customer Discovery", "topics": ["BRAND", "SPEAK"],
+        "n": 6, "title": "Customer Discovery", "topics": ["BRAND", "SPEAK"],
         "objectives": ["Write a customer interview script that avoids leading questions.",
                        "Practice interviews in pairs and start real interviews.",
                        "Describe a first-draft target customer."],
@@ -287,7 +287,7 @@ DAYS = [
                     "may start with people they already know."),
     },
     {
-        "n": 7, "title": "Market Research That Proves Demand", "topics": ["BRAND", "PRICE"],
+        "n": 7, "title": "Market Research and Demand Validation", "topics": ["BRAND", "PRICE"],
         "objectives": ["Build a market research survey in Google Forms.",
                        "Ask about price, preferences, and buying habits.",
                        "Send the survey to at least 15 target customers."],
@@ -303,7 +303,7 @@ DAYS = [
         "reentry": None,
     },
     {
-        "n": 8, "title": "Building Your Brand", "topics": ["BRAND", "IP", "BANK"],
+        "n": 8, "title": "Brand Identity Development", "topics": ["BRAND", "IP", "BANK"],
         "objectives": ["Create a business name, tagline, and draft logo.",
                        "Check that the name is available as a trademark and a web domain.",
                        "Explain why business and personal accounts stay separate."],
@@ -341,7 +341,7 @@ DAYS = [
                     "business page separate from a personal one."),
     },
     {
-        "n": 10, "title": "Speaking Up: Pitch, Story, and Networking", "topics": ["SPEAK", "NET"],
+        "n": 10, "title": "Professional Communication and Networking", "topics": ["SPEAK", "NET"],
         "objectives": ["Deliver a 60-second elevator pitch.",
                        "Tell your story on your own terms, including how (or whether) to talk about time away.",
                        "Attend a networking event and follow up professionally."],
@@ -362,7 +362,7 @@ DAYS = [
     },
     # ---------------- MODULE 3: FINANCE ----------------
     {
-        "n": 11, "title": "Money Moves: Personal Financial Footing", "topics": ["FIN", "WEALTH", "BANK"],
+        "n": 11, "title": "Personal Financial Management and Credit", "topics": ["FIN", "WEALTH", "BANK"],
         "objectives": ["Build a personal monthly budget.",
                        "Pull your free credit report and read it.",
                        "Make a plan for fines, fees, debts, and rebuilding credit."],
@@ -380,7 +380,7 @@ DAYS = [
                     "report is private and optional; case management helps dispute errors and find second-chance banking."),
     },
     {
-        "n": 12, "title": "Business Finance: Costs and Cash Flow", "topics": ["FIN"],
+        "n": 12, "title": "Business Finance: Costs and Cash Flow Management", "topics": ["FIN"],
         "objectives": ["Separate fixed and variable costs.",
                        "Explain cash flow and how a business owner pays themselves.",
                        "Start a startup budget in a spreadsheet."],
@@ -415,7 +415,7 @@ DAYS = [
         "reentry": None,
     },
     {
-        "n": 14, "title": "Funding Your Business", "topics": ["FIN", "BANK"],
+        "n": 14, "title": "Business Funding and Capital Access", "topics": ["FIN", "BANK"],
         "objectives": ["Compare savings, microloans, grants, and community lenders.",
                        "Explain what lenders look for.",
                        "Create a business borrowing profile."],
@@ -434,7 +434,7 @@ DAYS = [
         "reentry": "Case management connects participants to opening a business bank account with Truist or another partner.",
     },
     {
-        "n": 15, "title": "Wealth Mindset and Financial Validation", "topics": ["WEALTH", "FIN", "PRICE"],
+        "n": 15, "title": "Wealth Building, Financial Goals, and Plan Review", "topics": ["WEALTH", "FIN", "PRICE"],
         "objectives": ["Write a personal financial goal statement.",
                        "Present your pricing, revenue model, and budget to a finance professional.",
                        "Submit the Module 3 project."],
@@ -453,7 +453,7 @@ DAYS = [
     },
     # ---------------- MODULE 4: LAUNCH ----------------
     {
-        "n": 16, "title": "Staffing and Leveraging AI", "topics": ["FIN", "LIC"],
+        "n": 16, "title": "Staffing Strategy and Artificial Intelligence in Business", "topics": ["FIN", "LIC"],
         "objectives": ["Compare employees, contractors, and partners, and the rules for each.",
                        "Use AI tools for business tasks (drafting, planning, customer messages) safely.",
                        "Start the marketing strategy for the portfolio."],
@@ -470,7 +470,7 @@ DAYS = [
         "reentry": "AI tools did not exist in this form a few years ago. The lab starts from zero and covers privacy and scams.",
     },
     {
-        "n": 17, "title": "Resumes and Interviews", "topics": ["RESUME", "SPEAK"],
+        "n": 17, "title": "Resume Development and Interview Preparation", "topics": ["RESUME", "SPEAK"],
         "objectives": ["Write a resume that shows business and life skills.",
                        "Answer common interview questions, including questions about time away.",
                        "Know your rights under DC fair-chance hiring law."],
@@ -488,7 +488,7 @@ DAYS = [
                     "rules before each cohort). Participants practice a short, honest, forward-looking answer about gaps."),
     },
     {
-        "n": 18, "title": "Pitching to Stakeholders", "topics": ["SPEAK", "BANK", "NET"],
+        "n": 18, "title": "Investor and Stakeholder Communication", "topics": ["SPEAK", "BANK", "NET"],
         "objectives": ["Build a 5-minute pitch with slides.",
                        "Explain what investors, lenders, and partners want to hear.",
                        "Learn how to build, expand, and protect a business."],
@@ -507,7 +507,7 @@ DAYS = [
         "reentry": None,
     },
     {
-        "n": 19, "title": "Rehearsal and Portfolio Finish", "topics": ["SPEAK"],
+        "n": 19, "title": "Pitch Rehearsal and Portfolio Completion", "topics": ["SPEAK"],
         "objectives": ["Rehearse the pitch and use critique to improve it.",
                        "Finish the capstone portfolio and 90-day launch plan.",
                        "Confirm next steps with case management."],
@@ -515,14 +515,14 @@ DAYS = [
             (15, "Open", "Check-in. Review checkpoint."),
             (75, "Field Experience", "Pitch rehearsals in small groups with peer and instructor critique (timed, with the rubric)."),
             (70, "Build", "Finish the capstone portfolio and 90-day launch plan. Upload to Canvas."),
-            (20, "Close", "Next-steps meeting sign-up with case management; dress and logistics for pitch day."),
+            (20, "Close", "Next-steps meeting sign-up with case management; attire and logistics for the capstone."),
         ],
         "field": "Pitch rehearsals with critique.", "master": None, "truist": None,
         "exit": "What will you change after today's rehearsal?",
-        "reentry": "Dress for Success package (attire, headshots, business cards) is delivered before pitch day.",
+        "reentry": "Dress for Success package (attire, headshots, business cards) is delivered before the capstone.",
     },
     {
-        "n": 20, "title": "Pitch Day: Capstone Competition", "topics": ["SPEAK", "NET"],
+        "n": 20, "title": "Capstone Pitch Competition", "topics": ["SPEAK", "NET"],
         "objectives": ["Pitch your business to an external panel.",
                        "Complete the post-assessment.",
                        "Leave with a plan, a network, and your next steps."],

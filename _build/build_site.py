@@ -90,8 +90,8 @@ def index():
 <div class="hero"><div class="wrap hero-grid">
   <div>
   <p class="eyebrow">ONSE Pathways · 60 hours · 20 days</p>
-  <h1>From Hustle to Business Owner</h1>
-  <p class="lead">Turn the skills you already have into a real, legal, registered business. In four weeks you will build a business plan, a brand, a financial plan, and a pitch, and present it to a panel of DC business owners.</p>
+  <h1>Entrepreneurship and Business Ownership Program</h1>
+  <p class="lead">Develop the skills, plans, and professional network to launch and operate a legally registered business in the District of Columbia. In four weeks you will build a business plan, a brand, a financial plan, and a pitch, and present it to a panel of DC business owners.</p>
   <p><span class="partner">Curriculum by <strong>IRSJA</strong> · Delivered by <strong>Chart Academy</strong></span></p>
   <div class="btns">
     <a class="btn" href="getting-started.html">Start here →</a>
@@ -120,9 +120,9 @@ def index():
 
 <section class="alt"><div class="wrap">
   <div class="grid g2">
-    <div><p class="eyebrow">What you leave with</p><h2>Real tools, real network</h2>
+    <div><p class="eyebrow">What you leave with</p><h2>Program resources and network</h2>
       <ul>{"".join(f"<li>{e(x)}</li>" for x in leave)}</ul></div>
-    <div><p class="eyebrow">Coming home?</p><h2>Built for a fresh start</h2>
+    <div><p class="eyebrow">Reentry support</p><h2>Designed for returning citizens</h2>
       <p>If you have been away for a while, a lot changed: phones, apps, banking, how businesses get customers. This course meets you where you are. Every day starts with a short Tech Catch-Up, a case manager helps with ID, Clean Hands, supervision schedules, and anything else in the way, and nobody has to share their story unless they want to.</p>
       <a class="btn ghost" href="reentry.html">See the Reentry Toolkit</a></div>
   </div>
@@ -139,7 +139,7 @@ def getting_started():
     rules = [("Respect", "One voice at a time. Disagree with ideas, not people."),
              ("Your story, your terms", "You never have to share anything about your past."),
              ("Confidential", "What people share in this room stays in this room."),
-             ("Show up", "Two missed days in a row and your case manager will reach out to help, not to judge."),
+             ("Attendance", "Two missed days in a row and your case manager will reach out to help, not to judge."),
              ("Phones", "Phones are tools here. Use them for class work, silence them otherwise.")]
     body = f"""
 <div class="hero"><div class="wrap">
@@ -188,7 +188,7 @@ def day_block(day):
         chips.append(f'<span class="chip c-field">Field · {e(day["field"])}</span>')
     agenda = "".join(f'<li><span class="mins">{m} min</span><b>{e(label)}</b> {e(text)}</li>' for m, label, text in day["agenda"])
     topics = ", ".join(C.TOPICS[t] for t in day["topics"])
-    reentry = (f'<div class="note info"><strong>Coming home tip.</strong> {e(plain(day["reentry"]))}</div>'
+    reentry = (f'<div class="note info"><strong>Reentry support.</strong> {e(plain(day["reentry"]))}</div>'
                if day.get("reentry") else "")
     exit_ = (f'<div class="download"><div><div class="file">Exit ticket</div><div class="meta">{e(day["exit"])}</div></div>'
              f'{canvas_btn(f"D{day["n"]}", "Answer in Canvas")}</div>' if day.get("exit") else "")
@@ -254,7 +254,7 @@ def capstone():
     body = f"""
 <div class="hero"><div class="wrap">
   <p class="eyebrow">Days 19 and 20 · 50 points</p>
-  <h1>Capstone: Pitch Day</h1>
+  <h1>Capstone Pitch Competition</h1>
   <p class="lead">{e(C.CAPSTONE['summary'])}</p>
 </div></div>
 
@@ -286,7 +286,7 @@ def reentry():
     tips = [d for d in C.DAYS if d.get("reentry")]
     body = f"""
 <div class="hero"><div class="wrap">
-  <p class="eyebrow">For everyone coming home</p>
+  <p class="eyebrow">Support for returning citizens</p>
   <h1>Reentry Toolkit</h1>
   <p class="lead">Starting a business after time away means clearing a few extra hurdles: ID, debts to DC, a record, credit, supervision rules, and a world that went digital. None of these has to stop you. Here is where to start, and your case manager will walk each step with you.</p>
 </div></div>
