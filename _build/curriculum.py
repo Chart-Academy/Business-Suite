@@ -202,14 +202,15 @@ DAYS = [
             (15, "Open", "Check-in. Tech Catch-Up: saving and finding files in Google Drive."),
             (75, "Expert Content", "Understanding a Business Plan (Boss Up): the one-page plan and the business model canvas. "
                                    "Where DC's growth is: hospitality, retail, events, home and building services."),
-            (60, "Field Experience", "Opportunity scan: small groups research one DC corridor or upcoming project and list "
+            (40, "Field Experience", "Opportunity scan: small groups research one DC corridor or upcoming project and list "
                                      "the goods and services it will need."),
-            (20, "Build", "Pick your idea. Fill in the first half of the one-page plan."),
+            (40, "Build", "Agent Lab BL-01: pick your idea and draft your one-page plan with the Business Plan Coach."),
             (10, "Close", "Exit ticket."),
         ],
         "field": "Opportunity scan of one DC corridor or development project.", "master": None, "truist": None,
         "exit": "Who is your customer, and what problem do you solve for them?",
         "reentry": "Many participants come home to a different DC. The opportunity scan doubles as a tour of what changed.",
+        "lab": "BL-01",
     },
     {
         "n": 3, "title": "Business Structures and Registering in DC", "topics": ["LIC", "BANK", "FIN"],
@@ -222,7 +223,8 @@ DAYS = [
                                    "tax registration, Clean Hands certificate, Basic Business License."),
             (60, "Master Class", "Truist Bank, Bank On Your Success (session 1 of 4): business finance basics, business "
                                  "structure, and organizing your finances."),
-            (35, "Build", "Choose your structure and start your DC Compliance Checklist."),
+            (35, "Build", "Choose your structure, start your DC Compliance Checklist, and fill in the Licensing Visit "
+                          "Prep Sheet for tomorrow's trip to DLCP."),
             (10, "Close", "Exit ticket."),
         ],
         "field": None, "master": None,
@@ -233,37 +235,42 @@ DAYS = [
                     "payment plans. Child support arrears are handled through the Child Support Services Division."),
     },
     {
-        "n": 4, "title": "Licensing, Regulation, and Ethical Business", "topics": ["LIC"],
-        "objectives": ["Find the licenses and permits your business needs (for example, food, vending, home occupation, trades).",
-                       "Explain how a record can affect some licenses, and where to get help.",
-                       "Write three ethical rules your business will follow."],
+        "n": 4, "title": "Licensing Field Trip: DC Department of Licensing and Consumer Protection", "topics": ["LIC"],
+        "objectives": ["Walk through DC business registration and the Basic Business License with DLCP staff.",
+                       "Identify the license category, endorsements, permits, and fees for your business.",
+                       "Get answers to your prepared licensing questions and update your compliance checklist."],
         "agenda": [
-            (15, "Open", "Check-in. Tech Catch-Up: reading a government PDF and filling in a form online."),
-            (60, "Expert Content", "Compliance with Licensing and Regulatory Standards, and Ethical Business Practices (Boss Up). "
-                                   "Contracts, honest pricing, paying taxes, treating workers fairly."),
-            (60, "Master Class", "DC Department of Licensing and Consumer Protection (DLCP) representative, plus a local "
-                                 "entrepreneur on their real startup licensing story."),
-            (35, "Build", "Add every license and permit for your business to the checklist."),
-            (10, "Close", "Exit ticket: the licenses your business needs."),
+            (15, "Arrival", "Meet at DLCP, sign in, pass building security, and review the visit plan."),
+            (60, "Field Experience", "DLCP business licensing session: registering a business, the Basic Business License, "
+                                     "license categories and endorsements, Certificate of Occupancy and home occupation "
+                                     "permits, inspections, renewals, and how licensing considers records."),
+            (45, "Field Experience", "Small Business Resource Center: in pairs, look up your license category and fees with "
+                                     "a licensing specialist and ask your prepared questions."),
+            (30, "Build", "On-site work time: update your DC Compliance Checklist with what you learned."),
+            (30, "Close", "Group debrief, exit ticket in Canvas, and dismissal or travel back together."),
         ],
-        "field": None, "master": "DLCP representative and a local DC entrepreneur.", "truist": None,
-        "exit": "List the licenses and permits your business needs.",
-        "reentry": ("Some occupational and business licenses ask about criminal records. The class covers which ones, what DC law "
-                    "allows licensing boards to consider, and where to get free legal help with record sealing (CONFIRM current "
-                    "rules and legal-aid contacts before each cohort)."),
+        "field": "Field trip to DLCP: business licensing session and Small Business Resource Center.",
+        "master": "DLCP licensing staff.", "truist": None, "trip": True,
+        "exit": "What did you learn at DLCP that changes your compliance checklist?",
+        "reentry": ("Bring a photo ID for building security. Anyone without one tells their case manager by Day 2 so staff can "
+                    "arrange entry. Questions about how a record affects licensing can be asked privately, and the class covers "
+                    "where to get free legal help with record sealing (CONFIRM current rules and legal-aid contacts before each cohort)."),
     },
     {
-        "n": 5, "title": "Intellectual Property and Technical Assistance Lab", "topics": ["IP", "LIC"],
-        "objectives": ["Explain trademarks, copyright, and trade names, and search the USPTO database.",
+        "n": 5, "title": "Ethics, Intellectual Property, and Technical Assistance Lab", "topics": ["IP", "LIC"],
+        "objectives": ["Write three ethical rules your business will follow.",
+                       "Explain trademarks, copyright, and trade names, and search the USPTO database.",
                        "Get one-on-one help from a DC small business technical assistance provider.",
                        "Submit the Module 1 project."],
         "agenda": [
-            (15, "Open", "Check-in. Review checkpoint: compliance checklist peer check."),
-            (45, "Expert Content", "Protection of Intellectual Property and Trademarks (Boss Up): searching USPTO and the DC "
+            (15, "Open", "Check-in. Field trip debrief and compliance checklist peer check."),
+            (30, "Expert Content", "Ethical Business Practices (Boss Up): contracts, honest pricing, paying taxes, and "
+                                   "treating workers and customers fairly."),
+            (30, "Expert Content", "Protection of Intellectual Property and Trademarks (Boss Up): searching USPTO and the DC "
                                    "trade name registry before you print anything."),
             (60, "Field Experience", "Technical Assistance Lab with DC APEX Accelerator and DSLBD Small Biz Assist "
                                      "(on site or at the MLK Library)."),
-            (50, "Build", "Finish and submit the Module 1 project: Business Plan Draft + DC Compliance Checklist."),
+            (35, "Build", "Finish and submit the Module 1 project: Business Plan Draft + DC Compliance Checklist."),
             (10, "Close", "Module 1 reflection in Canvas."),
         ],
         "field": "Technical Assistance Lab: DC APEX Accelerator and DSLBD Small Biz Assist.", "master": None, "truist": None,
@@ -298,11 +305,13 @@ DAYS = [
         "agenda": [
             (15, "Open", "Check-in. Tech Catch-Up: making a Google Form and sharing a link by text."),
             (60, "Expert Content", "Market research basics: survey questions that give honest answers, and reading the results."),
-            (60, "Field Experience", "Market research: build, test, and send your survey."),
+            (60, "Field Experience", "Agent Lab BL-02, part 1: draft survey questions with the Market Research Assistant, "
+                                     "rewrite them in your own words, test with a partner, and send your survey."),
             (35, "Build", "Brand identity worksheet: values, personality, and what makes you different."),
             (10, "Close", "Exit ticket."),
         ],
         "field": "Market research survey sent to target customers (goal: 15 responses).", "master": None, "truist": None,
+        "lab": "BL-02",
         "exit": "What is one question in your survey that will help you set your price?",
         "reentry": None,
     },
@@ -355,7 +364,8 @@ DAYS = [
                                    "(Boss Up): introductions, business cards, follow-up messages, and the capability statement."),
             (45, "Field Experience", "Networking: attend a DC small business or Greater Washington Black Chamber of Commerce "
                                      "event (or a facilitated networking session in class if no event falls this week)."),
-            (50, "Build", "Finish and submit the Module 2 project: Brand Kit."),
+            (50, "Build", "Agent Lab BL-02, part 2: analyze your real interview notes and survey results, then finish "
+                          "and submit the Module 2 project: Brand Kit."),
             (10, "Close", "Module 2 reflection in Canvas."),
         ],
         "field": "Networking event (GWBCC or DC small business event).", "master": None, "truist": None,
@@ -411,10 +421,12 @@ DAYS = [
                                    "subscriptions, contracts, and break-even."),
             (45, "Master Class", "Selling the vision: communicating pricing, value, and financial viability to customers, "
                                  "partners, and stakeholders."),
-            (50, "Build", "Revenue model in the spreadsheet using your survey's price data."),
+            (50, "Build", "Agent Lab BL-03: check your costs and break-even with the Pricing and Budget Analyst, then "
+                          "build your revenue model from your survey's price data."),
             (10, "Close", "Exit ticket."),
         ],
         "field": None, "master": "Selling the vision: communicating price and value.", "truist": None,
+        "lab": "BL-03",
         "exit": "What is your price, and how many sales do you need to break even?",
         "reentry": None,
     },
@@ -464,8 +476,8 @@ DAYS = [
         "agenda": [
             (15, "Open", "Check-in. Tech Catch-Up: trying an AI assistant on a phone."),
             (60, "Expert Content", "Understanding Staffing Needs and Types; Leveraging Artificial Intelligence (Flipping the Game)."),
-            (60, "Field Experience", "AI lab: use AI to draft a marketing plan, a customer email, and pitch slide outlines, then "
-                                     "fact-check and edit them."),
+            (60, "Field Experience", "AI lab: review the agents you built, set your privacy rules, and use AI to draft your "
+                                     "marketing strategy, a customer email, and pitch slide outlines, then fact-check and edit them."),
             (35, "Build", "Marketing strategy section of the capstone portfolio."),
             (10, "Close", "Exit ticket."),
         ],
@@ -517,11 +529,13 @@ DAYS = [
                        "Confirm next steps with case management."],
         "agenda": [
             (15, "Open", "Check-in. Review checkpoint."),
-            (75, "Field Experience", "Pitch rehearsals in small groups with peer and instructor critique (timed, with the rubric)."),
+            (75, "Field Experience", "Agent Lab BL-04: practice panel questions with the Pitch Coach, then rehearse in small "
+                                     "groups with peer and instructor critique (timed, with the rubric)."),
             (70, "Build", "Finish the capstone portfolio and 90-day launch plan. Upload to Canvas."),
             (20, "Close", "Next-steps meeting sign-up with case management; attire and logistics for the capstone."),
         ],
         "field": "Pitch rehearsals with critique.", "master": None, "truist": None,
+        "lab": "BL-04",
         "exit": "What will you change after today's rehearsal?",
         "reentry": "Dress for Success package (attire, headshots, business cards) is delivered before the capstone.",
     },
@@ -577,7 +591,7 @@ ASSESSMENT = [
 
 # Course grade weights (approved by Cedric Thompson, October 24, 2026)
 WEIGHTS = [
-    ("Participation", "Daily attendance and exit tickets in Canvas", 20),
+    ("Participation", "Daily attendance, exit tickets, and the four Agent Labs, submitted in Canvas", 20),
     ("Module projects", "Module 1, 2, and 3 projects (15% each), submitted in Canvas", 45),
     ("Capstone", "Business portfolio (15%) and pitch (20%)", 35),
 ]
@@ -622,9 +636,10 @@ DIVERSE_LEARNERS = [
 ]
 
 ENHANCEMENTS = [
-    ("Social capital (C.5.2.1a, C.5.9)", "Master Classes with DLCP, DC Chamber, SCORE, and local business owners; a networking "
-                                        "event; an external pitch panel; and a one-year Greater Washington Black Chamber of "
-                                        "Commerce membership."),
+    ("Social capital (C.5.2.1a, C.5.9)", "A field trip to the DC Department of Licensing and Consumer Protection; Master "
+                                        "Classes with DC Chamber, SCORE, and local business owners; a networking event; an "
+                                        "external pitch panel; and a one-year Greater Washington Black Chamber of Commerce "
+                                        "membership."),
     ("Mentorship (C.5.2.1b, C.5.10)", "SCORE mentor matching in Module 2, group mentoring in Master Classes, and finance "
                                       "professional reviews in Module 3."),
     ("Financial institution (C.5.2.1c, C.5.11)", "Truist Bank, Bank On Your Success: four weekly sessions (Days 3, 8, 14, 18) "
@@ -711,6 +726,153 @@ TECH_CATCHUP = [
 ]
 
 
+# Agent Labs: one AI agent per module, in the AI for Workforce Readiness course's Agent Lab format.
+# Any free AI assistant works (Google Gemini, ChatGPT, Claude, or Microsoft Copilot).
+AI_GUARD = ('AI Instructions: Before you start, ask me to explain in my own words what this agent is for and what I changed in the [brackets]. Do not continue until I answer in my own words.')
+
+AGENT_LABS = [
+    {
+        "id": "BL-01", "day": 2, "module": "build", "name": "Business Plan Coach",
+        "summary": "Interviews you one question at a time and turns your answers into a one-page business plan, "
+                   "marking anything you still need to find out instead of guessing.",
+        "tools": "AI assistant, Google Docs",
+        "prompt": ("You are a business plan coach for a new small business owner in Washington, DC. My business idea is "
+                   "[describe your idea in one sentence]. My customer is [who will pay for it]. Interview me one question at a "
+                   "time to fill in a one-page business plan with these sections: Problem, Solution, Customer, Competition, How "
+                   "I make money, Startup costs, Licenses to look up, and Next steps. Use only what I tell you. If I don't know "
+                   "an answer, write TO FIND OUT instead of guessing. When we finish, show the plan as a table and list every "
+                   "fact I still need to check."),
+        "steps": ["Set up the Business Plan Coach with the starter instructions and fill in the [brackets].",
+                  "Answer its questions one at a time, in your own words.",
+                  "Highlight anything in the plan that you did not say. Delete it or check it.",
+                  "Copy the plan into a Google Doc. Keep every TO FIND OUT item; you will answer the licensing ones at DLCP on Day 4."],
+        "check": "AI can invent facts that sound right. Licenses, fees, and rules must come from DLCP, not from the AI.",
+        "own_words": ["“The coach asked me … and that made me realize …”",
+                      "“One thing the AI added that I did not say was … so I …”"],
+        "upload": "Your one-page plan (Google Doc shared as Anyone with the link → Viewer) and your own-words answers.",
+    },
+    {
+        "id": "BL-02", "day": 7, "module": "brand", "name": "Market Research Assistant",
+        "summary": "Drafts unbiased survey questions, then organizes your real interview notes and survey results into "
+                   "patterns, customer needs, and a price range, quoting the responses it used.",
+        "tools": "AI assistant, Google Forms, Google Sheets",
+        "prompt": ("You are a market research assistant for my small business in [neighborhood or ward], Washington, DC. I sell "
+                   "[product or service] to [target customer]. Help me with three jobs, one at a time, and wait for me between "
+                   "jobs. 1. Draft 8 survey questions for Google Forms about buying habits, price, and preferences, with no "
+                   "leading questions. 2. When I paste my real interview notes and survey results, summarize the patterns, the "
+                   "top 3 customer needs, and the price range customers named, and quote the responses you used. 3. List the "
+                   "kinds of competitors I should look up near me and what to compare (price, hours, reviews, and what they "
+                   "offer). Never invent customer responses, numbers, or business names. If I have not given you data, say so."),
+        "steps": ["Day 7: ask for draft survey questions (job 1). Rewrite them in your own words, remove any that lead the "
+                  "customer, and test the survey with a partner before you send it.",
+                  "Days 7 to 10: send the survey and finish at least 5 real customer interviews. The AI cannot do this part.",
+                  "Day 10: paste your interview notes and survey results (job 2). Check every quote against your notes.",
+                  "Ask for the competitor list (job 3) and look up three real competitors yourself.",
+                  "Use what you found in your target audience profile and brand kit."],
+        "check": "Every customer quote and number must come from your own interviews and survey. If the AI shows a quote you "
+                 "never collected, delete it.",
+        "own_words": ["“The pattern I saw in my customers is …”",
+                      "“A claim the AI made that my data did not support was …”"],
+        "upload": "Your survey link, your results summary, your competitor notes, and your own-words answers.",
+    },
+    {
+        "id": "BL-03", "day": 13, "module": "finance", "name": "Pricing and Budget Analyst",
+        "summary": "Asks about costs new owners often forget, explains your break-even point with your own numbers, and "
+                   "tests what happens to profit if your price changes.",
+        "tools": "AI assistant, Excel or Google Sheets",
+        "prompt": ("You are a pricing and budget analyst for a new small business in Washington, DC. I sell [product or "
+                   "service] at [your price]. Here are my costs: [paste your startup and monthly costs]. 1. Ask me about costs "
+                   "a business like mine often forgets, such as licenses, insurance, taxes, and fees, as questions, not numbers. "
+                   "2. Explain my break-even point step by step using only my numbers, and show your math. 3. Show what happens "
+                   "to my monthly profit if my price is 10% lower or 10% higher. Do not make up prices or costs. If a number is "
+                   "missing, ask me for it."),
+        "steps": ["Paste your cost list and answer the analyst's questions about missing costs.",
+                  "Find real prices for anything missing (quotes, websites, or the DLCP fee schedule). Do not use AI guesses.",
+                  "Rebuild the break-even math in your spreadsheet with formulas. Check that it matches the AI's math.",
+                  "Bring the results to the finance professional review on Day 15."],
+        "check": "AI can make math mistakes. Your spreadsheet formulas are the final answer, not the chat.",
+        "own_words": ["“My break-even point is … which means I need to …”",
+                      "“The AI's math was (right / wrong) when … I checked it by …”"],
+        "upload": "Your budget and revenue spreadsheet (shared as Anyone with the link → Viewer) and your own-words answers.",
+    },
+    {
+        "id": "BL-04", "day": 19, "module": "launch", "name": "Pitch Coach",
+        "summary": "Scores your pitch script on the panel's four criteria, then plays a tough but fair panelist and asks "
+                   "questions one at a time so you can practice your answers.",
+        "tools": "AI assistant (voice mode works well)",
+        "prompt": ("You are a pitch coach and a tough but fair panelist for a small business pitch competition in Washington, "
+                   "DC. My business is [business name], and here is my 5-minute pitch script: [paste your script]. 1. Score it 1 "
+                   "to 5 on viability, financial readiness, market alignment, and clarity, with one reason for each score. 2. Ask "
+                   "me 5 questions a panel of DC business owners would ask, one at a time, and wait for my answer. 3. After each "
+                   "answer, tell me one thing that worked and one thing to tighten. Do not rewrite my pitch for me. Tell me what "
+                   "to change and let me change it."),
+        "steps": ["Paste your own pitch script and read the scores.",
+                  "Answer all 5 practice questions out loud or by typing, without notes.",
+                  "Make your own changes to the script, then time yourself: 5 minutes or less.",
+                  "Rehearse with your group and compare the AI's feedback with your classmates' feedback."],
+        "check": "The panel scores you, not the AI. Use the coach to practice, and trust your classmates' and instructor's feedback too.",
+        "own_words": ["“The hardest practice question was … and my answer now is …”",
+                      "“The biggest change I made to my pitch was … because …”"],
+        "upload": "Your revised pitch script and your own-words answers (submit with the capstone portfolio).",
+    },
+]
+
+# Licensing field trip (Day 4). CONFIRM the address, visitor ID rules, and contacts with DLCP when booking each cohort.
+FIELD_TRIP = {
+    "day": 4,
+    "host": "DC Department of Licensing and Consumer Protection (DLCP)",
+    "address": "1100 4th Street SW, Washington, DC 20024",
+    "transit": "Metro Green Line to Waterfront station, then a short walk",
+    "length": "3 hours, including arrival and debrief",
+    "bring": ["A government photo ID (needed for building security)",
+              "Your phone, charged",
+              "Your Licensing Visit Prep Sheet (filled in on Day 3)",
+              "Your draft DC Compliance Checklist",
+              "A pen and a folder for handouts"],
+    "wear": "Business casual. You are meeting the agency that will license your business.",
+    "know": ["Your business idea in one sentence",
+             "Your business structure (sole proprietorship, LLC, or other)",
+             "Where you plan to operate: from home, a storefront, a vehicle, events, or online",
+             "Your Clean Hands status from MyTax.DC.gov, if you checked it"],
+    "questions": ["What license category and endorsements fit my business?",
+                  "Do I need a Certificate of Occupancy or a home occupation permit?",
+                  "What will my license cost, and how long does it last?",
+                  "Will my business need inspections or any other permits?",
+                  "What should I do first, and what can wait until I have customers?",
+                  "(Optional, ask privately) How could a criminal record affect my license, and where can I get help?"],
+    "conduct": ["Arrive on time with your cohort; sign-in at DLCP counts for attendance.",
+                "Phones on silent during the session; use them only for notes and lookups.",
+                "Do not share personal information you are not comfortable sharing. Specialists can answer general questions.",
+                "Stay with the group until staff dismiss you."],
+    "after": ["Update your DC Compliance Checklist with every license, permit, and fee you learned about.",
+              "Answer the exit ticket in Canvas.",
+              "Bring your updated checklist to Day 5 for the peer check and the Technical Assistance Lab."],
+    "staff_timeline": [
+        ("4 weeks before", ["Request the visit from DLCP's small business or outreach team: date, time, group size (15 to 20 "
+                            "plus staff), a licensing presentation, and Small Business Resource Center time.",
+                            "Share the topics in the Day 4 agenda so the presenter can prepare.",
+                            "Ask about visitor ID and security rules, accessibility, and whether names must be sent in advance."]),
+        ("2 weeks before", ["Get the visit confirmed in writing, with the presenter's name and a day-of contact number.",
+                            "Send the participant list if DLCP needs it for security.",
+                            "Check each participant's supervision check-ins, work, and childcare for conflicts on Day 4.",
+                            "Plan transit: meet at the site or travel together; load SmarTrip cards if the program covers fares.",
+                            "Confirm accommodations for anyone who needs them."]),
+        ("1 week before", ["Print the Licensing Visit Prep Sheet, sign-in sheet, and emergency contact list.",
+                           "Case management confirms photo ID and Clean Hands status with each participant."]),
+        ("Day 3", ["Hand out and go over the Prep Sheet in the Build block; each participant writes their questions.",
+                   "Remind participants of the time, address, ID, and dress."]),
+        ("Day before", ["Send a reminder text with the address, meeting time, and staff phone number.",
+                        "Reconfirm with the DLCP contact."]),
+        ("Day 4", ["Two staff on site. Headcount and sign-in at arrival and departure; the sign-in sheet is the attendance record.",
+                   "Lead Instructor keeps time; Case Management Associate handles late arrivals and private questions.",
+                   "Take photos only with participant consent."]),
+        ("After the visit", ["Send a thank-you to DLCP the same week.",
+                             "Record attendance in Canvas and the daily progress report to ONSE.",
+                             "Note what to change for the next cohort's visit."]),
+    ],
+}
+
+
 def module_days(mod):
     lo, hi = mod["days"]
     return [d for d in DAYS if lo <= d["n"] <= hi]
@@ -722,6 +884,10 @@ def check():
     for d in DAYS:
         total = sum(m for m, _, _ in d["agenda"])
         assert total == 180, f"Day {d['n']} adds up to {total} minutes"
+    for lab in AGENT_LABS:
+        day = next(d for d in DAYS if d["n"] == lab["day"])
+        assert day.get("lab") == lab["id"], f"{lab['id']} is not on Day {lab['day']}"
+    assert next(d for d in DAYS if d["n"] == FIELD_TRIP["day"]).get("trip"), "Field trip day is not marked"
     covered = {t for d in DAYS for t in d["topics"]}
     missing = set(TOPICS) - covered
     assert not missing, f"Topics never taught: {missing}"

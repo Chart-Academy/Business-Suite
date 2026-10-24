@@ -279,6 +279,13 @@ def lessons(d):
             d.bullet_list(day["objectives"])
             d.table(["Min", "Block", "Activity"], [0.5, 1.3, 4.9],
                     [(str(mins), label, text) for mins, label, text in day["agenda"]], size=9)
+            lab = next((x for x in C.AGENT_LABS if x["id"] == day.get("lab")), None)
+            if lab:
+                d.labeled(f"Agent Lab {lab['id']}, {lab['name']}: ", lab["summary"] + " Check: " + lab["check"])
+            if day.get("trip"):
+                T = C.FIELD_TRIP
+                d.labeled("Field trip: ", f"{T['host']}, {T['address']} ({T['transit']}). Participants prepare with the "
+                          "Licensing Visit Prep Sheet on Day 3; staff follow the DLCP Field Trip Planning Guide.")
             if day.get("exit"):
                 d.labeled("Exit ticket: ", day["exit"])
             if day.get("reentry"):
@@ -301,6 +308,13 @@ def materials(d):
         ("Technology", "A laptop and professional bag for each participant; Google Workspace, Canva, and an AI assistant."),
         ("Partner materials", "Truist Bank Bank On Your Success session materials; DLCP, DSLBD, and SCORE handouts."),
     ])
+    d.doc.add_heading("Agent Labs: applied AI tools", level=2)
+    d.body("Each module includes one Agent Lab in which participants set up a free AI assistant (Google Gemini, ChatGPT, "
+           "Claude, or Microsoft Copilot) with starter instructions and use it on their own business. AI organizes and checks "
+           "the participant's work; it never replaces real customer evidence, official licensing information, or the "
+           "participant's own words.")
+    d.table(["Lab", "Day", "Agent", "What participants do", "What stays human"], [0.6, 0.45, 1.25, 2.4, 2.0],
+            [(x["id"], str(x["day"]), x["name"], x["summary"], x["check"]) for x in C.AGENT_LABS], size=8.5)
     d.doc.add_heading("Business 101 Reference Guide topics (C.5.6.1)", level=2)
     d.table(["Topic", "Guide", "Days"], [3.4, 2.2, 1.1], [
         ("a. Business finance and financial literacy", "Money Moves", "11, 12"),
@@ -318,7 +332,12 @@ def materials(d):
 
 def teaching(d):
     d.h1("8. Teaching Strategies")
-    d.bullet_list(C.TEACHING)
+    d.bullet_list(C.TEACHING + [
+        ("Responsible use of AI", "Four Agent Labs teach participants to use AI as an assistant: starter instructions that "
+                                  "forbid invented data, a check step in every lab, privacy rules, and an own-words reflection."),
+        ("Agency site visit", "On Day 4 the cohort visits the DC Department of Licensing and Consumer Protection to learn "
+                              "licensing directly from the agency and look up each participant's license category."),
+    ])
     d.doc.add_heading("Behavioral transformation: Flipping the Game", level=2)
     d.body("Through structured reflection and facilitated discussion threaded through all four modules, participants shift "
            "from short-term to long-term planning; build discipline, accountability, and goal-setting habits; strengthen "
@@ -401,8 +420,10 @@ def implementation(d):
            "training to adult learners, and the Subject Matter Expert is the developer of the curriculum (C.5.12).")
     d.doc.add_heading("Cohort timeline", level=2)
     d.table(["When", "Activity", "Lead"], [1.7, 3.5, 1.5], [
-        ("10 business days before Day 1", "Confirm schedule, site, and roster with ONSE; set up the Canvas cohort.",
-         "Program Director"),
+        ("4 weeks before Day 1", "Request the Day 4 field trip from DLCP (licensing session and Small Business Resource "
+                                 "Center time).", "Program Director"),
+        ("10 business days before Day 1", "Confirm schedule, site, and roster with ONSE; set up the Canvas cohort; confirm "
+                                          "the DLCP visit in writing.", "Program Director"),
         ("5 business days before Day 1", "Confirm Master Class speakers, Truist sessions, SCORE mentors, and the pitch panel; "
                                          "print reference guides and workbooks; prepare laptops.", "Lead Instructor, Operations"),
         ("Day 1", "Orientation, pre-assessment, Canvas setup; pre-assessment summary to ONSE.", "Lead Instructor, Data Analyst"),

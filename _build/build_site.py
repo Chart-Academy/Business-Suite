@@ -4,6 +4,7 @@ AI for Workforce Readiness course (css/style.css and js/theme.js come from that 
 Run: .venv/bin/python _build/build_site.py
 Pages: index, getting-started, lessons, capstone, grading, readiness.
 """
+import re
 from html import escape as e
 from pathlib import Path
 
@@ -166,6 +167,7 @@ def index():
         "<strong>Prices and budgets you can defend</strong>, reviewed by finance professionals.",
         "<strong>A pitch delivered to real business owners</strong>, and a resume and interview practice for income while you build.",
         "<strong>A professional network</strong>: a one-year Greater Washington Black Chamber of Commerce membership, SCORE mentors, and a Truist Bank banking relationship.",
+        "<strong>Four AI agents you built yourself</strong>: a Business Plan Coach, a Market Research Assistant, a Pricing and Budget Analyst, and a Pitch Coach.",
         "<strong>Tools to keep</strong>: a laptop, professional bag, Dress for Success package, your IRSJA guides, and Canvas access after you graduate.",
     ])
     paths = [
@@ -231,7 +233,7 @@ def index():
       <div class="plan-intro">
         <p class="eyebrow">Course plan</p>
         <h2 class="section-title">Four modules, 20 days, one business</h2>
-        <p>Every class follows the same rhythm: <strong>Learn → Do → Build</strong>. You learn a skill, use it in the real market or with a guest expert, then add it to your own business portfolio. 60 hours, 3 hours a day.</p>
+        <p>Every class follows the same rhythm: <strong>Learn → Do → Build</strong>. You learn a skill, use it in the real market or with a guest expert, then add it to your own business portfolio. 60 hours, 3 hours a day, with four <span class="lab-badge">Agent Lab</span> days and a <span class="lab-badge">Field Trip</span> to the DC licensing office.</p>
         <p><a class="btn btn-primary" href="lessons.html">See all lessons</a></p>
       </div>
       <aside class="timecard" aria-label="Course plan">
@@ -251,7 +253,7 @@ def getting_started():
         ('<path d="M4 5h16v14H4z"/><path d="M4 9h16M9 9v10"/>', "Canvas",
          "Where you find materials, answer the daily exit ticket (that is how attendance is counted), and submit your projects. You keep access after you graduate."),
         ('<path d="M4 18l4-12h8l4 12z"/><path d="M8 6l8 12M16 6L8 18"/>', "A Google account",
-         "Google Drive keeps your business plan, survey, and spreadsheets in one place. Google Forms runs your market research survey."),
+         "Google Drive keeps your plan, survey, and spreadsheets in one place, and Google Gemini is a free AI assistant for the Agent Labs. ChatGPT, Claude, or Microsoft Copilot also work."),
         ('<rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/>', "Your phone",
          "Charged, with a working number. You'll use it for customer interviews, banking apps, and your business social media."),
     ]
@@ -269,7 +271,9 @@ def getting_started():
         ('<rect x="5" y="10" width="14" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/>', "What people share in this room stays in this room."),
         ('<rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/>', "Attendance: miss two days in a row and your case manager reaches out to help, not to judge."),
         ('<circle cx="11" cy="11" r="6"/><path d="M20 20l-4.5-4.5"/>', "Check facts that matter, especially licensing rules and numbers, before you rely on them."),
-        ('<path d="M14 6l4 4-9 9H5v-4z"/>', "Write the “In your own words” part of every project yourself."),
+        ('<rect x="5" y="10" width="14" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/>', "Never paste your Social Security number, bank details, passwords, or details about a record into an AI tool."),
+        ('<circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.5 2.5L16 9.5"/>', "Customer quotes, survey results, and numbers must be real. AI organizes your evidence; it never makes it up."),
+        ('<path d="M14 6l4 4-9 9H5v-4z"/>', "Write the “In your own words” part of every project and lab yourself."),
     ]
     card = lambda icon, h, p: (f'<li class="gs-card"><svg class="gs-icon" viewBox="0 0 24 24" aria-hidden="true">{icon}</svg>'
                                f'<h3>{e(h)}</h3><p>{p}</p></li>')
@@ -328,9 +332,67 @@ def getting_started():
     page("getting-started.html", f"Getting Started · {C.PROGRAM['title']}", body)
 
 
+def agent_lab(lab):
+    steps = re.sub(r" (\d)\. ", r"\n\1. ", lab["prompt"])  # one numbered job per line
+    prompt = e(steps) + f'\n\n<span class="ai-note">{e(C.AI_GUARD)}</span>'
+    return f"""
+          <details class="lesson-part agent-lab" id="{lab['id'].lower()}" data-wo="{lab['id']}">
+            <summary class="part-title"><span><span class="lab-tag">Agent Lab · {lab['id']}</span> {e(lab['name'])}</span><span class="part-toggle" aria-hidden="true">+</span></summary>
+            <div class="part-body">
+              <p>{e(lab['summary'])}</p>
+              <p class="lab-meta"><strong>Tools:</strong> {e(lab['tools'])} · Any free AI assistant works: Google Gemini, ChatGPT, Claude, or Microsoft Copilot.</p>
+              <div>
+              <p class="label">Starter instructions</p>
+              <pre class="prompt">{prompt}</pre>
+              </div>
+              <div class="assess">
+              <p class="label">Lab assignment · submit in Canvas</p>
+              <ol>{"".join(f"<li>{e(x)}</li>" for x in lab["steps"])}</ol>
+              <p class="callout"><strong>Check the AI:</strong> {e(lab['check'])}</p>
+              {own_words(lab["own_words"])}
+              <p class="upload"><strong>Upload to Canvas:</strong> {e(lab['upload'])}</p>
+              <p class="submit-canvas">{canvas_btn(lab['id'])}</p>
+              </div>
+            </div>
+          </details>"""
+
+
+def field_trip():
+    T = C.FIELD_TRIP
+    li = lambda items: "".join(f"<li>{e(x)}</li>" for x in items)
+    return f"""
+          <details class="lesson-part agent-lab" id="field-trip">
+            <summary class="part-title"><span><span class="lab-tag">Field Trip</span> Prepare for your visit to DLCP</span><span class="part-toggle" aria-hidden="true">+</span></summary>
+            <div class="part-body">
+              <p>Today we visit the {e(T['host'])}, the agency that registers and licenses DC businesses. Fill in the prep sheet on Day 3 and bring it with you.</p>
+              <div class="table-wrap"><table><tbody>
+                <tr><td><strong>Where</strong></td><td>{e(T['host'])}, {e(T['address'])}</td></tr>
+                <tr><td><strong>Getting there</strong></td><td>{e(T['transit'])}. Your instructor confirms the meeting time and place.</td></tr>
+                <tr><td><strong>How long</strong></td><td>{e(T['length'])}</td></tr>
+                <tr><td><strong>Wear</strong></td><td>{e(T['wear'])}</td></tr>
+              </tbody></table></div>
+              <div class="materials">
+              <p class="label">Prep sheet</p>
+              <ul class="files"><li><a href="files/Licensing-Visit-Prep-Sheet.docx">Licensing Visit Prep Sheet (Word)</a></li></ul>
+              </div>
+              <div class="prose">
+              <h4>Bring with you</h4><ul>{li(T['bring'])}</ul>
+              <h4>Know before you go</h4><ul>{li(T['know'])}</ul>
+              <h4>Questions to ask a licensing specialist</h4><ol>{li(T['questions'])}</ol>
+              <h4>During the visit</h4><ul>{li(T['conduct'])}</ul>
+              <h4>After the visit</h4><ol>{li(T['after'])}</ol>
+              </div>
+            </div>
+          </details>"""
+
+
 def lesson(day):
     m = module_of(day)
-    if day.get("project"):
+    if day.get("trip"):
+        badge = "Field Trip"
+    elif day.get("lab"):
+        badge = "Agent Lab"
+    elif day.get("project"):
         badge = "Capstone" if m["key"] == "launch" else "Project due"
     elif day.get("truist"):
         badge = "Truist Bank"
@@ -392,7 +454,7 @@ def lesson(day):
           <details class="lesson-part">
             <summary class="part-title"><span>Class agenda · 3 hours</span><span class="part-toggle" aria-hidden="true">+</span></summary>
             <div class="part-body"><div class="prose"><ol>{agenda}</ol>{f"<ul>{''.join(partners)}</ul>" if partners else ""}</div></div>
-          </details>{support}{assignment}{project}
+          </details>{field_trip() if day.get("trip") else ""}{"".join(agent_lab(l) for l in C.AGENT_LABS if l["id"] == day.get("lab"))}{support}{assignment}{project}
         </div>
       </details>"""
 
@@ -409,7 +471,7 @@ def lessons():
     </div>""" for m in C.MODULES)
     body = f"""
   <main class="wrap">
-{head("20 lessons, in order", "Lessons", 'Open a day to see its learning objectives, the class agenda, and the in-class assignment. Days marked <span class="lab-badge">Project due</span> end a module with a project you submit in Canvas.', road_map())}
+{head("20 lessons, in order", "Lessons", 'Open a day to see its learning objectives, the class agenda, and the in-class assignment. Days marked <span class="lab-badge">Agent Lab</span> include an AI agent you build and test in class, and <span class="lab-badge">Field Trip</span> is our visit to the DC licensing office. Module projects are due on Days 5, 10, and 15.', road_map())}
 {mods}
   </main>
 """
