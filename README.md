@@ -29,5 +29,4 @@ Setup once: `python3 -m venv .venv && .venv/bin/pip install python-docx`.
 - [ ] Before each cohort, confirm the agency details and rules flagged CONFIRM in `curriculum.py` and the resource links on the Readiness Review page.
 - [ ] Participant workbook and project templates (Word).
 - [ ] Pre/post assessment questions (25 items).
-- [ ] Confirm the grading weights (Participation 20%, module projects 45%, capstone 35%) in `build_site.py`.
 - [ ] Class slides for each day, if wanted (the AI course posts slides inside each lesson).

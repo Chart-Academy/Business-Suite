@@ -329,6 +329,9 @@ def teaching(d):
 def assessment(d):
     d.h1("9. Assessment Plan")
     d.table(["Assessment", "When", "What"], [1.6, 1.4, 3.7], C.ASSESSMENT)
+    d.h3("Course grade")
+    d.table(["Component", "What counts", "Weight"], [1.6, 4.1, 1.0],
+            [(n, desc, f"{w}%") for n, desc, w in C.WEIGHTS] + [("Total", "", f"{sum(w for _, _, w in C.WEIGHTS)}%")])
     d.labeled("Completion. ", C.COMPLETION, after=8)
     for m in C.MODULES:
         if m["rubric"]:

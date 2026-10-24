@@ -575,6 +575,13 @@ ASSESSMENT = [
     ("Program evaluation", "Day 20", "Participant satisfaction and feedback survey; results feed the final cohort report."),
 ]
 
+# Course grade weights (approved by Cedric Thompson, October 24, 2026)
+WEIGHTS = [
+    ("Participation", "Daily attendance and exit tickets in Canvas", 20),
+    ("Module projects", "Module 1, 2, and 3 projects (15% each), submitted in Canvas", 45),
+    ("Capstone", "Business portfolio (15%) and pitch (20%)", 35),
+]
+
 COMPLETION = ("A participant completes the program by attending at least 80% of instructional hours (48 of 60), submitting "
               "the three module projects, and delivering the capstone pitch. (Proposed; confirm with ONSE.)")
 
@@ -711,6 +718,7 @@ def module_days(mod):
 
 def check():
     assert len(DAYS) == PROGRAM["days"]
+    assert sum(w for _, _, w in WEIGHTS) == 100, "Grade weights must add up to 100%"
     for d in DAYS:
         total = sum(m for m, _, _ in d["agenda"])
         assert total == 180, f"Day {d['n']} adds up to {total} minutes"

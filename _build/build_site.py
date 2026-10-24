@@ -17,10 +17,8 @@ CSS_V = "20261024c"
 NAV = [("index.html", "Home"), ("getting-started.html", "Getting Started"), ("lessons.html", "Lessons"),
        ("capstone.html", "Capstone"), ("grading.html", "Grading"), ("readiness.html", "Readiness Review")]
 
-# Grading weights (proposed; the completion rule in curriculum.COMPLETION also applies)
-WEIGHTS = [("Participation", "Daily attendance and exit tickets in Canvas", 20, "wb-part"),
-           ("Module projects", "Module 1, 2, and 3 projects (15% each), submitted in Canvas", 45, "wb-lessons"),
-           ("Capstone", "Business portfolio (15%) and pitch (20%)", 35, "wb-final")]
+# weight-bar color class for each grading component, in curriculum.WEIGHTS order
+BAR_CLASS = ["wb-part", "wb-lessons", "wb-final"]
 
 PROJECT_KEY = {"build": "M1", "brand": "M2", "finance": "M3", "launch": "CAP"}
 
@@ -470,8 +468,8 @@ def capstone():
 
 
 def grading():
-    rows = "".join(f"<tr><td>{e(n)}</td><td>{e(d)}</td><td class='num'>{w}%</td></tr>" for n, d, w, _ in WEIGHTS)
-    bar = "".join(f'<span class="{cls}" style="flex: {w};">{e(n)} {w}%</span>' for n, _, w, cls in WEIGHTS)
+    rows = "".join(f"<tr><td>{e(n)}</td><td>{e(d)}</td><td class='num'>{w}%</td></tr>" for n, d, w in C.WEIGHTS)
+    bar = "".join(f'<span class="{cls}" style="flex: {w};">{e(n)} {w}%</span>' for (n, _, w), cls in zip(C.WEIGHTS, BAR_CLASS))
     rubrics = "".join(f"""
       <details class="lesson-part rubric" id="rubric-m{m['num']}">
         <summary class="part-title"><span>Module {m['num']}: {e(m['project'])}</span><span class="part-toggle" aria-hidden="true">+</span></summary>
